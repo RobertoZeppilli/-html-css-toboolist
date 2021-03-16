@@ -1,4 +1,4 @@
-/* reset */
+/* reset & common */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,23 +6,46 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* header */
-h1 {
-    font-size: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-weight: 700;
-    padding-top: 5px;
-    padding-bottom: 5px;
+body {
+    background-color: #D3D3D3;
 }
 
+.tag {
+    background-color: #1E90FF;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    font-size: 10px;
+}
+.check {
+    border: 1px solid green;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    color: green;
+}
+.cross {
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    color: red;
+}
+
+/* header */
 header {
     background-color: white;
 }
 
-body {
-    background-color: #D3D3D3;
+h1 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #logo {
@@ -36,26 +59,20 @@ body {
 #wrapper {
     width: 70%;
     background-color: #FFF;
-    margin: 20px auto;
+     margin: 20px auto;
 }
 
+/* buttons container */
 #add {
     margin-bottom: 10px;
-    height: 50px;
+    height: 80px;
 }
-
-#toboolist {
-    height: 300px;
-    margin-top: 20px;
-}
-
 #task, #section {
     display: inline-block;
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
 }
-
 #task {
     background-color: #1E90FF;
     color: #FFF;
@@ -67,5 +84,40 @@ body {
     border: 1px solid #D3D3D3;
 }
 
+/* list */
+#toboolist {
+    height: 480px;
+    margin-top: 20px;   
+}
+ .task-list {
+    display: inline-block;
+    width: 100%;
+    margin-left: 20px;
+}
+.list-item {
+    margin-left: 18px;
+    margin-bottom: 5px;
+}
+li {
+    list-style: none;
+}
+ul, li {
+    margin-bottom: 20px;
+}
 
-
+/* little boxes colors */
+.orange {
+    background-color: orange;
+}
+.violet {
+    background-color: violet;
+}
+.green {
+    background-color: green;
+}
+.light-green {
+    background-color: lightgreen;
+}
+.magenta {
+    background-color: magenta;
+}
